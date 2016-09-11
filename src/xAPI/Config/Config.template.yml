@@ -1,7 +1,7 @@
 name: BrightCookie LRS
 mode: production
 database:
-    host_uri: 'mongodb://127.0.0.1'
+    host_uri: 'mongodb://mongodb'
     db_name: lxHive
 xAPI:
     latest_version: 1.0.2

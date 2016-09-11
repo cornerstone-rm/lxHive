@@ -3,6 +3,7 @@ vendor/*
 htrouter.phar
 
 storage/logs/*
+storage/files/*
 
 migrations/*
 
@@ -13,8 +14,6 @@ sami.phar
 SamiConfig.php
 
 cache/*
-
-storage/files/*
 
 src/xAPI/Config/Config.yml
 
