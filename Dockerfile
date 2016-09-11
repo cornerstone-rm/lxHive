@@ -20,7 +20,3 @@ WORKDIR /var/www/default
 RUN php /composer.phar install
 
 RUN cp src/xAPI/Config/Config.template.yml Config.yml
-
-RUN ./X setup:db
-RUN ./X setup:oauth
-RUN ./X user:create
