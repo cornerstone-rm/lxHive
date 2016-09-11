@@ -12,12 +12,14 @@ RUN php -r "if (hash_file('SHA384', 'composer-setup.php') === 'e115a8dc7871f15d8
 RUN php composer-setup.php
 RUN php -r "unlink('composer-setup.php');"
 
-RUN php composer.phar install .
+COPY . /var/www/default
+
+WORKDIR /var/www/default
+
+RUN php /composer.phar install
 
 RUN cp src/xAPI/Config/Config.template.yml Config.yml
 
 RUN ./X setup:db
 RUN ./X setup:oauth
 RUN ./X user:create
-
-COPY . /var/www/default
