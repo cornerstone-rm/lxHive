@@ -20,3 +20,5 @@ WORKDIR /var/www/default
 RUN php /composer.phar install
 
 RUN cp src/xAPI/Config/Config.template.yml Config.yml
+
+VOLUME ["/var/www/default"]
