@@ -5,6 +5,7 @@ RUN apt-get update && apt-get install -my \
   curl \
   wget \
   php5 \
+  php5-mongo \
   php5-mcrypt
 
 RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
