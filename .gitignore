@@ -18,3 +18,5 @@ cache/*
 src/xAPI/Config/Config.yml
 
 sftp-config.json
+
+.DS_Store
